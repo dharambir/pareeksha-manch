@@ -1,11 +1,12 @@
-/*========= LOGIN AN SIGNUP PAGE CSS ============================*/
 body , main{
     margin: 0px;
     background-color: #f6f6f6;
   }
   main{
-    margin-top: 33px;
+    margin-top: 57px;
   }
+/*========= LOGIN PAGE CSS ============================*/
+
   .vertical-center{
     display: flex;
     align-items: center;
@@ -51,3 +52,17 @@ body , main{
     color: #3e4244;
     background-color: transparent;
   }
+@media screen and (max-width: 768px) {
+  .authform{
+    padding-top: 0px;
+  }
+  .authform form{
+    padding: 0px;
+  }
+  .authform .vertical-center{
+    display: unset;
+  }
+  .authform .forgot_pwd_link{
+    margin-top: 15px;
+  }
+}

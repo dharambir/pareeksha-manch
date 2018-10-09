@@ -1,10 +1,10 @@
-<link rel="stylesheet" type="text/css" href="/assets/auth.css">
+<link rel="stylesheet" type="text/css" href="/assets/home.css">
 <div class="container">
   <div class="row">
-    <div class="col-lg-7 col-md-7">
+    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
       <img class="img-responsive" src="/assets/pareeksha-manch-login.jpg">
     </div>
-    <div class="col-lg-5 col-md-5">
+    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
       <div class="authform">
         <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :role => 'form'}) do |f| %>
           <h3>Welcome to Pareeksha Manch</h3>
@@ -21,11 +21,11 @@
           </div>
           <div class="form-group">
               <div class="row vertical-center">
-                <div class="col-md-7">
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
                   <%= f.submit 'Sign in', :class => 'button btn btn-primary login-btn' %>
                   <%= link_to 'Sign up', new_registration_path(resource_name)  %>
                   </div>
-                <div class="col-md-5">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 forgot_pwd_link">
                   <a class="" href="/users/sign_up">Forgot password?</a>
                 </div>
               </div>
